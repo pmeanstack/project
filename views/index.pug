@@ -1,0 +1,35 @@
+<html>
+ <head>
+       <title>GuestHouse</title>
+       <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+       <link rel="stylesheet" href="stylesheets/style.css">
+ </head>
+ <body>
+ <div class="container">
+ <div class="row">
+    <div class="col-md-6">
+    <h1 style="font-family:monospace;margin-left:200px;font-size:55px" >login</h1>
+    <form action="/login" method="post" style="margin-top:50px">
+    <div class="form-group">    
+    <label class="control-group col-md-3" style="font-family:monospace;font-size:20px">username:</label>
+    <div class="input-group col-md-7">
+    <input type="text" class="form-control" name="name" placeholder="enter username" style="text-align:center;font-family:monospace;border-radius:10px"><br><br>
+    </div>
+    </div>
+    <div class="form-group">    
+    <label class="control-group col-md-3" style="font-family:monospace;font-size:20px">password:</label>
+    <div class="input-group col-md-7">
+    <input type="password" name="password" class="form-control" placeholder="enter password" style="text-align:center;font-family:monospace;border-radius:10px"><br><br>
+    </div>
+    </div>
+    <a href="/forget" style="margin-left:350px">forget password</a><br><br>
+   
+    <input type="submit" value="     submit      "style="background-color:#A2FFE9;padding:8px;margin-left:250px">
+    </form>
+    </div>
+</div>
+</div>
+ </body>
+</html>

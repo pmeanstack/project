@@ -1,0 +1,106 @@
+<html>
+<head>
+    <title>OrderList</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet"  href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
+    <link rel="stylesheet"  href="https://cdn.datatables.net/buttons/1.5.6/css/buttons.dataTables.min.css">
+    <script type="text/javascript" src=" https://code.jquery.com/jquery-3.3.1.js"></script> 
+    <script type="text/javascript" src=" https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script> 
+    <script type="text/javascript" src=" https://cdn.datatables.net/buttons/1.5.6/js/dataTables.buttons.min.js"></script> 
+    <script type="text/javascript" src=" https://cdn.datatables.net/buttons/1.5.6/js/buttons.flash.min.js"></script><script type="text/javascript" src=" https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script> 
+    <script type="text/javascript" src=" https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script> 
+    <script type="text/javascript" src=" https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script> 
+    <script type="text/javascript" src=" https://cdn.datatables.net/buttons/1.5.6/js/buttons.html5.min.js"></script> 
+    <script type="text/javascript" src=" https://cdn.datatables.net/buttons/1.5.6/js/buttons.print.min.js"></script> 
+    <script src="javascripts/ol.js"></script>
+</head>
+<body>
+    <div class="container">
+    <div class="row">
+    <div class="col-md-12">
+    <h1 style="margin-left:450px">Order-List</h1>    
+    <table id="example"  class="table table-bordered table-striped table-hover" >
+        <thead>
+            <tr>
+                <th>sno.</th>
+                <th>team size</th>
+                <th>veg quantity</th>
+                <th>non-veg quantity</th>
+                <th>breakfast</th>
+                <th>sancks</th>
+                <th>tea</th>
+                <th>coffee</th>
+                <th>action</th>
+               
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>
+                    <button class="btn btn-info">Edit</button>
+                    <button class="btn btn-danger">Remove</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    </div>
+    <div class="col-md-6">
+    <form action="/form" method="post" class="sf" style="margin-top:50px">
+    <div class="form-group">    
+    <label class="control-group col-md-3">team size:</label>
+    <div class="input-group col-md-7">
+    <input type="number" name="teamsize" class="form-control" style="text-align:center;margin-left:20px;border-radius:10px"><br><br>
+    </div>
+    </div>
+    <div class="form-group">    
+    <label class="control-group col-md-3">veg quantity:</label>
+    <div class="input-group col-md-7">
+    <input type="number" name="vegqty" class="form-control"  style="text-align:center;margin-left:20px;border-radius:10px"><br><br>
+    </div>
+    </div>
+    <div class="form-group">    
+    <label class="control-group col-md-3">non-veg quantity:</label>
+    <div class="input-group col-md-7">
+    <input type="number" name="non-vegqty" class="form-control" style="text-align:center;margin-left:20px;border-radius:10px"><br><br>
+    </div>
+    </div>
+    <div class="form-group">    
+    <label class="control-group col-md-3">breakfast:</label>
+    <div class="input-group col-md-7">
+    <input type="number" name="breakfast" class="form-control"  style="text-align:center;margin-left:20px;border-radius:10px"><br><br>
+    </div>
+    </div>
+    <div class="form-group">    
+    <label class="control-group col-md-3">snacks:</label>
+    <div class="input-group col-md-7">
+    <input type="number" name="snacks" class="form-control"  style="text-align:center;margin-left:20px;border-radius:10px"><br><br>
+    </div>
+    </div>
+    <div class="form-group">    
+    <label class="control-group col-md-3">tea:</label>
+    <div class="input-group col-md-7">
+    <input type="number" name="tea" class="form-control"  style="text-align:center;margin-left:20px;border-radius:10px"><br><br>
+    </div>
+    </div>
+    <div class="form-group">    
+    <label class="control-group col-md-3">coffee:</label>
+    <div class="input-group col-md-7">
+    <input type="number" name="coffee" class="form-control" style="text-align:center;margin-left:20px;border-radius:10px"><br><br>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+
+</body>
+</html>
